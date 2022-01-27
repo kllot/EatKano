@@ -425,10 +425,10 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             SubmitResults();
         }
 
-        if (cps <= 5) return '消极模式ON';
-        if (cps <= 8) return '不要再把球传给我了!!';
-        if (cps <= 10)  return 'HeyHeyHey!';
-        if (cps <= 15) return '世界！为我助力！';
+        if (score <= 50) return '消极模式ON';
+        if (score <= 100) return '不要再把球传给我了!!';
+        if (score <= 135)  return 'HeyHeyHey!';
+        if (score <= 200) return '世界！为我助力！';
         return '人？';
     }
 
